@@ -30,9 +30,9 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            txtLength = new TextBox();
+            txtWidth = new TextBox();
+            btnCalculate = new Button();
             SuspendLayout();
             // 
             // label1
@@ -40,9 +40,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(97, 72);
             label1.Name = "label1";
-            label1.Size = new Size(78, 32);
+            label1.Size = new Size(88, 32);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Length";
             // 
             // label2
             // 
@@ -51,39 +51,39 @@
             label2.Name = "label2";
             label2.Size = new Size(78, 32);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Width";
             // 
-            // textBox1
+            // txtLength
             // 
-            textBox1.Location = new Point(333, 65);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 39);
-            textBox1.TabIndex = 2;
+            txtLength.Location = new Point(333, 65);
+            txtLength.Name = "txtLength";
+            txtLength.Size = new Size(200, 39);
+            txtLength.TabIndex = 2;
             // 
-            // textBox2
+            // txtWidth
             // 
-            textBox2.Location = new Point(333, 203);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(200, 39);
-            textBox2.TabIndex = 3;
+            txtWidth.Location = new Point(333, 203);
+            txtWidth.Name = "txtWidth";
+            txtWidth.Size = new Size(200, 39);
+            txtWidth.TabIndex = 3;
             // 
-            // button1
+            // btnCalculate
             // 
-            button1.Location = new Point(219, 318);
-            button1.Name = "button1";
-            button1.Size = new Size(200, 92);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnCalculate.Location = new Point(219, 318);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(200, 92);
+            btnCalculate.TabIndex = 4;
+            btnCalculate.Text = "Calculate Area and Perimeter";
+            btnCalculate.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(624, 488);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnCalculate);
+            Controls.Add(txtWidth);
+            Controls.Add(txtLength);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
@@ -96,8 +96,8 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox txtLength;
+        private TextBox txtWidth;
+        private Button btnCalculate;
     }
 }
