@@ -33,6 +33,8 @@
             txtLength = new TextBox();
             txtWidth = new TextBox();
             btnCalculate = new Button();
+            txtArea = new TextBox();
+            txtPerimeter = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -47,7 +49,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(97, 210);
+            label2.Location = new Point(97, 158);
             label2.Name = "label2";
             label2.Size = new Size(78, 32);
             label2.TabIndex = 1;
@@ -55,32 +57,49 @@
             // 
             // txtLength
             // 
-            txtLength.Location = new Point(333, 65);
+            txtLength.Location = new Point(219, 65);
             txtLength.Name = "txtLength";
             txtLength.Size = new Size(200, 39);
             txtLength.TabIndex = 2;
             // 
             // txtWidth
             // 
-            txtWidth.Location = new Point(333, 203);
+            txtWidth.Location = new Point(219, 151);
             txtWidth.Name = "txtWidth";
             txtWidth.Size = new Size(200, 39);
             txtWidth.TabIndex = 3;
             // 
             // btnCalculate
             // 
-            btnCalculate.Location = new Point(219, 318);
+            btnCalculate.Location = new Point(97, 234);
             btnCalculate.Name = "btnCalculate";
-            btnCalculate.Size = new Size(200, 92);
+            btnCalculate.Size = new Size(322, 92);
             btnCalculate.TabIndex = 4;
             btnCalculate.Text = "Calculate Area and Perimeter";
             btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click;
+            // 
+            // txtArea
+            // 
+            txtArea.Location = new Point(163, 368);
+            txtArea.Name = "txtArea";
+            txtArea.Size = new Size(256, 39);
+            txtArea.TabIndex = 5;
+            // 
+            // txtPerimeter
+            // 
+            txtPerimeter.Location = new Point(163, 447);
+            txtPerimeter.Name = "txtPerimeter";
+            txtPerimeter.Size = new Size(256, 39);
+            txtPerimeter.TabIndex = 6;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(624, 488);
+            ClientSize = new Size(540, 544);
+            Controls.Add(txtPerimeter);
+            Controls.Add(txtArea);
             Controls.Add(btnCalculate);
             Controls.Add(txtWidth);
             Controls.Add(txtLength);
@@ -99,5 +118,7 @@
         private TextBox txtLength;
         private TextBox txtWidth;
         private Button btnCalculate;
+        private TextBox txtArea;
+        private TextBox txtPerimeter;
     }
 }
