@@ -81,14 +81,14 @@
             // 
             // txtArea
             // 
-            txtArea.Location = new Point(163, 368);
+            txtArea.Location = new Point(465, 234);
             txtArea.Name = "txtArea";
             txtArea.Size = new Size(256, 39);
             txtArea.TabIndex = 5;
             // 
             // txtPerimeter
             // 
-            txtPerimeter.Location = new Point(163, 447);
+            txtPerimeter.Location = new Point(465, 287);
             txtPerimeter.Name = "txtPerimeter";
             txtPerimeter.Size = new Size(256, 39);
             txtPerimeter.TabIndex = 6;
@@ -97,7 +97,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(540, 544);
+            ClientSize = new Size(770, 392);
             Controls.Add(txtPerimeter);
             Controls.Add(txtArea);
             Controls.Add(btnCalculate);
