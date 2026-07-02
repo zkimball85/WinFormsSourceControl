@@ -9,11 +9,16 @@ namespace WinFormsSourceControl
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            int length = Convert.ToInt32(txtLength.Text);
-            int width = Convert.ToInt32(txtWidth.Text);
+            if (!int.TryParse(txtLength.Text, out int length) || !int.TryParse(txtWidth.Text, out int width))
+            {
+                MessageBox.Show("Please enter valid whole numbers for length and width.", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtArea.Clear();
+                txtPerimeter.Clear();
+                return;
+            }
 
             int area = length * width;
-            int perimeter = length * 2 + width * 2;
+            int perimeter = 2 * (length + width);
 
             txtArea.Text = "Area is: " + area;
             txtPerimeter.Text = "Perimeter is: " + perimeter;
